@@ -1,0 +1,14 @@
+$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/rules_xcodeproj/BazelSampleApp/Info.plist
+$(BAZEL_OUT)/darwin_arm64-dbg/bin/external/rules_xcodeproj_generated/generator/BazelSample/BazelSampleXcodeProj/BazelSampleXcodeProj-params/BazelSampleApp.11.link.params
+$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/BazelSample.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/CocktailDB.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/CocktailDBInterface.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/CommonUI.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkData.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDetails.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDetailsInterface.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDiscovery.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDiscoveryInterface.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDomain.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/NetworkInterface.rules_xcodeproj.swift.compile.params
+$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/Networking.rules_xcodeproj.swift.compile.params

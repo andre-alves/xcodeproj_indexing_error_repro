@@ -1,0 +1,38 @@
+strings:
+  - inputs:
+      CommonUI/Resources/Strings/pt-BR.lproj/CommonUILocalizable.strings
+    outputs:
+      - templateName: structured-swift5
+        params:
+          enumName: Localization
+        output: CommonUI/Sources/Generated/Strings.swift
+  - inputs:
+      DrinkDetails/Resources/Strings/pt-BR.lproj/DrinkDetailsLocalizable.strings
+    outputs:
+      - templateName: structured-swift5
+        params:
+          enumName: Localization
+        output: DrinkDetails/Sources/Generated/Strings.swift
+
+xcassets:
+  - inputs:
+      CommonUI/Resources/Assets/Assets.xcassets
+    outputs:
+      templateName: swift5
+      params:
+        publicAccess: true
+      output: CommonUI/Sources/Generated/Images.swift
+  - inputs:
+      DrinkDetails/Resources/Assets/Assets.xcassets
+    outputs:
+      templateName: swift5
+      params:
+        publicAccess: false
+      output: DrinkDetails/Sources/Generated/Images.swift
+
+files:
+  - inputs:
+      CommonUI/Resources/LottieJsons
+    outputs:
+      templateName: structured-swift5
+      output: CommonUI/Sources/Generated/Files.swift

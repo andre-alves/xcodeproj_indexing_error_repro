@@ -1,0 +1,2240 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		758C42AD9F96BE2638F83BCD /* BazelDependencies */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7D95AEC9B5A6930206F1B1 /* Build configuration list for PBXAggregateTarget "BazelDependencies" */;
+			buildPhases = (
+				E1D880A1D5EA90CDEE23271B /* Generate Bazel Dependencies */,
+				7AEAB77C810AA712F6C26B4A /* Create swift_debug_settings.py */,
+			);
+			dependencies = (
+			);
+			name = BazelDependencies;
+			productName = BazelDependencies;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1E9F73E848D6DA4168542241 /* DrinkDetailsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B20593317563187CAB3595 /* DrinkDetailsScene.swift */; };
+		22F268D5FCFB8762EC971712 /* DrinkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96966E1377FC607F94784C4 /* DrinkDetailsViewController.swift */; };
+		28783C0CC21D396AF5466A62 /* DrinkDiscoveryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8AF2BADBD8EE574D44C88C /* DrinkDiscoveryRouter.swift */; };
+		299EA0D1F14BE1C2D88BA549 /* CocktailDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD823B0C224152658D8E4BC6 /* CocktailDBClient.swift */; };
+		2DDF190E0AE85C63785173EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F6FEAD8D8B01FB6C6F359A /* AppDelegate.swift */; };
+		2DE5994EC9DB6B719650DD68 /* AlphaAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF9D029AF06D50784A06C2 /* AlphaAnimation.swift */; };
+		318CCA5C6C53DE1B9E8EBE1B /* DrinkDiscoveryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B47CF84ABF54BCF160D9A /* DrinkDiscoveryPresenter.swift */; };
+		392040816892627462A74089 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5132319BBB5CCDB9768C8A /* Network.swift */; };
+		3DC2C2715A9600FF0E06EE56 /* NetworkResponseSerializing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E7C3AEE044784272CA473 /* NetworkResponseSerializing.swift */; };
+		534A2F6AABF54EC2CDDC6471 /* DrinkDiscoveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD63A7EEFB84DF4EF70BA85 /* DrinkDiscoveryTableViewCell.swift */; };
+		58086476CC78319CAD67ECE3 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560119F01687D666D65EFAF2 /* Strings.swift */; };
+		6161971DF258DBDE9EE2637A /* GetAlcoholDrinkPreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B59385BDFF6414868D1AFE7 /* GetAlcoholDrinkPreviews.swift */; };
+		63B78570318E6CCE8CA63D04 /* DrinkDiscoveryScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57115062B9BC601F8D9D097F /* DrinkDiscoveryScene.swift */; };
+		64B0E06B7880D7012F97AEB0 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D78F034014E50EC41C87E0 /* Images.swift */; };
+		67E43D0567C0207E1B62FEDE /* DrinkUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F364F6F2014E1968177217AF /* DrinkUseCases.swift */; };
+		7790640E41E454C1BBEB7D69 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5B5C343FBAF3E889F7AA23 /* Strings.swift */; };
+		791508AD681357C617A5D8DD /* DrinkDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6DF325D243D3664E4B17B /* DrinkDetailsPresenter.swift */; };
+		7EEDE082F1CE0B75059F3884 /* CocktailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1092A7F5850B81C5E63BB /* CocktailRepository.swift */; };
+		83A398683ACBC6501D717496 /* GetDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B20A5AA91F66DD4D1A22EDA /* GetDrink.swift */; };
+		855102601BD084737570E149 /* GreatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1AA064C5B9DA8B56EFE642 /* GreatButton.swift */; };
+		9580B30778BAB7EBA4FEA521 /* DrinkDiscoveryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206F264A9E499E7DB22C5EAB /* DrinkDiscoveryInteractor.swift */; };
+		9D4AA4AAF36F5454169325CA /* DrinkDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDD8F258A1C3948EB34E5CD /* DrinkDiscoveryViewController.swift */; };
+		9E105AE56E512CCA74B81446 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA19CB559EB4E40D1F424E8 /* Images.swift */; };
+		9E9083A5FADAEBB3B526FF7D /* DrinkDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E746A77A03EBD7D8C68A9 /* DrinkDetailsInteractor.swift */; };
+		9F223043B33A6FF72BC48095 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CC944EE0017DFC67889AD5 /* LoadingView.swift */; };
+		A6E0AB5E40E1E53AD40B62F6 /* DrinkRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F468E4BC6B7ADF0B04B02864 /* DrinkRepositories.swift */; };
+		BB4706262787B77E746BE688 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFAD35B767EF14020EAB682 /* Drink.swift */; };
+		BD41F7C6E156A570BFAD324B /* AppDelegate+RootComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4594E886334A1BF1F4C578 /* AppDelegate+RootComponent.swift */; };
+		C6DCB348977799747372185F /* DrinkDiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F8F36F09A40772DF21969 /* DrinkDiscoveryView.swift */; };
+		CC344E3F530B6FC62FBF20A3 /* CocktailDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54E42FB499A7368BE82DECE /* CocktailDB.swift */; };
+		CD8F89FEF886F9FA182330E9 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95FF818B13D0B869976805C /* Files.swift */; };
+		DECD0ECBA3F05F3E59823501 /* StatefulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B268B5EEEFB1873E838228D /* StatefulView.swift */; };
+		E4C08C2FC3083E2042D4C11B /* DrinkDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C55467C73F84DF290EEAB2 /* DrinkDetailsView.swift */; };
+		F74A9D9148BBE746498EAE0A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE63B8B6233F768BE0456C9 /* RootViewController.swift */; };
+		FAE700D3561136492FDA7D83 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E838E424ABDDBF29C3EA1 /* Networking.swift */; };
+		FB7212B496D5E90230DC2C80 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961EB9D80FCE8E7F054C8EF /* EmptyState.swift */; };
+		FF53E3B1076B40DCDBF88D30 /* DrinkDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E3FB15EDA9F5EF2FA310D /* DrinkDetailsRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BCBB2C2E8FB0C2526A10E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F9BA76197290B93C9F672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C42AD9F96BE2638F83BCD;
+			remoteInfo = BazelDependencies;
+		};
+		2C2A458436425FC2BCB84161 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F9BA76197290B93C9F672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C42AD9F96BE2638F83BCD;
+			remoteInfo = BazelDependencies;
+		};
+		3BA372D80C0CE82CED944C6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F9BA76197290B93C9F672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C42AD9F96BE2638F83BCD;
+			remoteInfo = BazelDependencies;
+		};
+		46BBDC99F34A54563214E42E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F9BA76197290B93C9F672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C42AD9F96BE2638F83BCD;
+			remoteInfo = BazelDependencies;
+		};
+		613BAC712BE72AB49398F413 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F9BA76197290B93C9F672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C42AD9F96BE2638F83BCD;
+			remoteInfo = BazelDependencies;
+		};
+		6C78419C000098A7611BCF0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F9BA76197290B93C9F672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C42AD9F96BE2638F83BCD;
+			remoteInfo = BazelDependencies;
+		};
+		83BFEBEBB114298DFFF6F1EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F9BA76197290B93C9F672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C42AD9F96BE2638F83BCD;
+			remoteInfo = BazelDependencies;
+		};
+		991C30B284C010DE1E148B15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F9BA76197290B93C9F672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C42AD9F96BE2638F83BCD;
+			remoteInfo = BazelDependencies;
+		};
+		CEFF06D0360119D70C95E145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F9BA76197290B93C9F672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C42AD9F96BE2638F83BCD;
+			remoteInfo = BazelDependencies;
+		};
+		E3642339F1624C653A2AE918 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F9BA76197290B93C9F672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C42AD9F96BE2638F83BCD;
+			remoteInfo = BazelDependencies;
+		};
+		F65DB18A35D9BA3C45579A82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F9BA76197290B93C9F672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C42AD9F96BE2638F83BCD;
+			remoteInfo = BazelDependencies;
+		};
+		F724A872B3F3E9136B3F3B97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F9BA76197290B93C9F672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C42AD9F96BE2638F83BCD;
+			remoteInfo = BazelDependencies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0229CC5BEF97B12C8B565138 /* libCocktailDBInterface.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libCocktailDBInterface.a; path = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/libCocktailDBInterface.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		096E746A77A03EBD7D8C68A9 /* DrinkDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailsInteractor.swift; sourceTree = "<group>"; };
+		0E55ECD47529AD4BE63B4770 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lottie.framework; sourceTree = "<group>"; };
+		0F5132319BBB5CCDB9768C8A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1848C168FA48E87C862C000D /* BazelSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BazelSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		206F264A9E499E7DB22C5EAB /* DrinkDiscoveryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDiscoveryInteractor.swift; sourceTree = "<group>"; };
+		2F1AA064C5B9DA8B56EFE642 /* GreatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatButton.swift; sourceTree = "<group>"; };
+		302255A72CD1E1696A306C27 /* CocktailDBInterface.rules_xcodeproj.swift.compile.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = CocktailDBInterface.rules_xcodeproj.swift.compile.params; sourceTree = "<group>"; };
+		31487C01E1FF54FB3529E3E9 /* CommonUI.rules_xcodeproj.swift.compile.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = CommonUI.rules_xcodeproj.swift.compile.params; sourceTree = "<group>"; };
+		330E838E424ABDDBF29C3EA1 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		35185738D21877738F157C4C /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cartography.framework; sourceTree = "<group>"; };
+		370DA5EB6864816C48FA2758 /* libDrinkDomain.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libDrinkDomain.a; path = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/libDrinkDomain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37EB30286A75DC3EC53EB50A /* libCocktailDB.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libCocktailDB.a; path = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/libCocktailDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8AF2BADBD8EE574D44C88C /* DrinkDiscoveryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDiscoveryRouter.swift; sourceTree = "<group>"; };
+		3FFAD35B767EF14020EAB682 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		43EDA0E0D1FE93581460E50C /* libNetworking.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libNetworking.a; path = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/libNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4961EB9D80FCE8E7F054C8EF /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		49C55467C73F84DF290EEAB2 /* DrinkDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailsView.swift; sourceTree = "<group>"; };
+		4B59385BDFF6414868D1AFE7 /* GetAlcoholDrinkPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAlcoholDrinkPreviews.swift; sourceTree = "<group>"; };
+		50CA1DB0976ABEF66A454D66 /* libDrinkDiscovery.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libDrinkDiscovery.a; path = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/libDrinkDiscovery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		560119F01687D666D65EFAF2 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		57115062B9BC601F8D9D097F /* DrinkDiscoveryScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDiscoveryScene.swift; sourceTree = "<group>"; };
+		578E7C3AEE044784272CA473 /* NetworkResponseSerializing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseSerializing.swift; sourceTree = "<group>"; };
+		5AD63A7EEFB84DF4EF70BA85 /* DrinkDiscoveryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDiscoveryTableViewCell.swift; sourceTree = "<group>"; };
+		5BEC27ACB912FA7FD858E346 /* BUILD.bazel */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUILD.bazel; sourceTree = "<group>"; };
+		604E1900A163B4BF6BA066FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		63747F438CC73093ACF9D3F6 /* CocktailDB.rules_xcodeproj.swift.compile.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = CocktailDB.rules_xcodeproj.swift.compile.params; sourceTree = "<group>"; };
+		68DCEC268514C50C5D2F6FD4 /* DrinkDetails.rules_xcodeproj.swift.compile.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = DrinkDetails.rules_xcodeproj.swift.compile.params; sourceTree = "<group>"; };
+		6A68A78DB999946B79F7117C /* DrinkDetailsInterface.rules_xcodeproj.swift.compile.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = DrinkDetailsInterface.rules_xcodeproj.swift.compile.params; sourceTree = "<group>"; };
+		6A82BAE48C894F5988084EDB /* DrinkData.rules_xcodeproj.swift.compile.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = DrinkData.rules_xcodeproj.swift.compile.params; sourceTree = "<group>"; };
+		6DA1092A7F5850B81C5E63BB /* CocktailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailRepository.swift; sourceTree = "<group>"; };
+		716F8F36F09A40772DF21969 /* DrinkDiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDiscoveryView.swift; sourceTree = "<group>"; };
+		72B1015F51CE4F7A622D85FD /* Networking.rules_xcodeproj.swift.compile.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = Networking.rules_xcodeproj.swift.compile.params; sourceTree = "<group>"; };
+		794D9939429245C9B4CDA8F2 /* DrinkDiscoveryInterface.rules_xcodeproj.swift.compile.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = DrinkDiscoveryInterface.rules_xcodeproj.swift.compile.params; sourceTree = "<group>"; };
+		7A259B1A97B58CEDCD07E508 /* libDrinkDiscoveryInterface.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libDrinkDiscoveryInterface.a; path = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/libDrinkDiscoveryInterface.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83AF9D029AF06D50784A06C2 /* AlphaAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAnimation.swift; sourceTree = "<group>"; };
+		84F6DF325D243D3664E4B17B /* DrinkDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailsPresenter.swift; sourceTree = "<group>"; };
+		8752FD27E9E64F6A5EB27BD2 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
+		8BA187D70A296DE9F28163E5 /* libDrinkDetails.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libDrinkDetails.a; path = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/libDrinkDetails.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90952C08AF1B5F868626845A /* libNetworkInterface.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libNetworkInterface.a; path = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/libNetworkInterface.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D78F034014E50EC41C87E0 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		9B20A5AA91F66DD4D1A22EDA /* GetDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDrink.swift; sourceTree = "<group>"; };
+		9B268B5EEEFB1873E838228D /* StatefulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulView.swift; sourceTree = "<group>"; };
+		A4083CC9C81CCB2978B7A82E /* BazelSampleApp.11.link.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = BazelSampleApp.11.link.params; sourceTree = "<group>"; };
+		AB2137A393C345166C1D09B3 /* BUILD.bazel */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUILD.bazel; sourceTree = "<group>"; };
+		AEA19CB559EB4E40D1F424E8 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		BD0249100CE76E4A0294C856 /* libDrinkDetailsInterface.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libDrinkDetailsInterface.a; path = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/libDrinkDetailsInterface.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD823B0C224152658D8E4BC6 /* CocktailDBClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDBClient.swift; sourceTree = "<group>"; };
+		C22B5CC1DE9EF4FCE19F7313 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
+		C3CC944EE0017DFC67889AD5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CBE63B8B6233F768BE0456C9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		CC8E3FB15EDA9F5EF2FA310D /* DrinkDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailsRouter.swift; sourceTree = "<group>"; };
+		CF9A6AF35643E18A1F9E95CC /* BazelSample.rules_xcodeproj.swift.compile.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = BazelSample.rules_xcodeproj.swift.compile.params; sourceTree = "<group>"; };
+		D39B3C03400C9F276210A02B /* libDrinkData.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libDrinkData.a; path = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/libDrinkData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D42B6AAE0E769D90BBFACFA9 /* NetworkInterface.rules_xcodeproj.swift.compile.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = NetworkInterface.rules_xcodeproj.swift.compile.params; sourceTree = "<group>"; };
+		D5409F06589592C069353F4A /* DrinkDomain.rules_xcodeproj.swift.compile.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = DrinkDomain.rules_xcodeproj.swift.compile.params; sourceTree = "<group>"; };
+		D54E42FB499A7368BE82DECE /* CocktailDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDB.swift; sourceTree = "<group>"; };
+		D656312BA9EE758EFC853548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D96966E1377FC607F94784C4 /* DrinkDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailsViewController.swift; sourceTree = "<group>"; };
+		DEEC6EFB5BA39153B5927A3D /* DrinkDiscovery.rules_xcodeproj.swift.compile.params */ = {isa = PBXFileReference; lastKnownFileType = file; path = DrinkDiscovery.rules_xcodeproj.swift.compile.params; sourceTree = "<group>"; };
+		DF16398DEF5E237E2381A737 /* libCommonUI.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libCommonUI.a; path = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/libCommonUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E35B47CF84ABF54BCF160D9A /* DrinkDiscoveryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDiscoveryPresenter.swift; sourceTree = "<group>"; };
+		E7F6FEAD8D8B01FB6C6F359A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB4594E886334A1BF1F4C578 /* AppDelegate+RootComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+RootComponent.swift"; sourceTree = "<group>"; };
+		F364F6F2014E1968177217AF /* DrinkUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkUseCases.swift; sourceTree = "<group>"; };
+		F468E4BC6B7ADF0B04B02864 /* DrinkRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRepositories.swift; sourceTree = "<group>"; };
+		F6B20593317563187CAB3595 /* DrinkDetailsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailsScene.swift; sourceTree = "<group>"; };
+		F95FF818B13D0B869976805C /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		FE5B5C343FBAF3E889F7AA23 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		FEDD8F258A1C3948EB34E5CD /* DrinkDiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDiscoveryViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0018E7452AF602DFBBFCDB5A /* BazelSample */ = {
+			isa = PBXGroup;
+			children = (
+				CB2B274FD22CAE08C9998260 /* rules_xcodeproj */,
+			);
+			path = BazelSample;
+			sourceTree = "<group>";
+		};
+		0276F02C0583E535C789DC50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D675E57AAB9BB7D7929C310 /* Cartography.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		096968C3CEB5367F6938EC02 /* DrinkDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7352117AC0FD31A05EC1C5AD /* Sources */,
+			);
+			path = DrinkDetails;
+			sourceTree = "<group>";
+		};
+		09C11CD8BE96C6F700D94CDD /* BazelSample */ = {
+			isa = PBXGroup;
+			children = (
+				CF9A6AF35643E18A1F9E95CC /* BazelSample.rules_xcodeproj.swift.compile.params */,
+				63747F438CC73093ACF9D3F6 /* CocktailDB.rules_xcodeproj.swift.compile.params */,
+				302255A72CD1E1696A306C27 /* CocktailDBInterface.rules_xcodeproj.swift.compile.params */,
+				31487C01E1FF54FB3529E3E9 /* CommonUI.rules_xcodeproj.swift.compile.params */,
+				6A82BAE48C894F5988084EDB /* DrinkData.rules_xcodeproj.swift.compile.params */,
+				68DCEC268514C50C5D2F6FD4 /* DrinkDetails.rules_xcodeproj.swift.compile.params */,
+				6A68A78DB999946B79F7117C /* DrinkDetailsInterface.rules_xcodeproj.swift.compile.params */,
+				DEEC6EFB5BA39153B5927A3D /* DrinkDiscovery.rules_xcodeproj.swift.compile.params */,
+				794D9939429245C9B4CDA8F2 /* DrinkDiscoveryInterface.rules_xcodeproj.swift.compile.params */,
+				D5409F06589592C069353F4A /* DrinkDomain.rules_xcodeproj.swift.compile.params */,
+				72B1015F51CE4F7A622D85FD /* Networking.rules_xcodeproj.swift.compile.params */,
+				D42B6AAE0E769D90BBFACFA9 /* NetworkInterface.rules_xcodeproj.swift.compile.params */,
+			);
+			path = BazelSample;
+			sourceTree = "<group>";
+		};
+		0BC981481AA807F12D2EAB46 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				206F264A9E499E7DB22C5EAB /* DrinkDiscoveryInteractor.swift */,
+				E35B47CF84ABF54BCF160D9A /* DrinkDiscoveryPresenter.swift */,
+				3A8AF2BADBD8EE574D44C88C /* DrinkDiscoveryRouter.swift */,
+				5AD63A7EEFB84DF4EF70BA85 /* DrinkDiscoveryTableViewCell.swift */,
+				716F8F36F09A40772DF21969 /* DrinkDiscoveryView.swift */,
+				FEDD8F258A1C3948EB34E5CD /* DrinkDiscoveryViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0BE207719856F5300E0B6741 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A1E608D175F059AC0103680 /* Cartography */,
+				A8011FA29B74E5FE99075D3E /* Kingfisher */,
+				6088987A83A8EA601FA9E46F /* lottie-ios */,
+				AB2137A393C345166C1D09B3 /* BUILD.bazel */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		0CE3803D30E37666CF2F20A4 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				D9988F261A0EFC70A352D434 /* rules_xcodeproj_generated */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		165A2986DC83FAFA18683FAE /* /Users/andre.alves/Documents/Works/xcodeproj_indexing_error_repro */ = {
+			isa = PBXGroup;
+			children = (
+				9BEAA846443073431681C68B /* BazelSample */,
+				0BE207719856F5300E0B6741 /* Pods */,
+				D82B5E602EBB197858B678BD /* Bazel Generated Files */,
+				98BAED5F56B1800E01A8EFFD /* Products */,
+				4C0E16A58DCA4C50BDF3E34A /* Frameworks */,
+			);
+			path = /Users/andre.alves/Documents/Works/xcodeproj_indexing_error_repro;
+			sourceTree = "<absolute>";
+		};
+		2149992432A9A43CFEEA440A /* ios-arm64_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				8752FD27E9E64F6A5EB27BD2 /* Kingfisher.framework */,
+			);
+			path = "ios-arm64_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		28C65008425D29DA9746FDD9 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				F95FF818B13D0B869976805C /* Files.swift */,
+				95D78F034014E50EC41C87E0 /* Images.swift */,
+				FE5B5C343FBAF3E889F7AA23 /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		2D675E57AAB9BB7D7929C310 /* Cartography.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				D7B2CC756D0185F2E9FDDAB7 /* ios-arm64_x86_64-simulator */,
+			);
+			path = Cartography.xcframework;
+			sourceTree = "<group>";
+		};
+		31ECFA4F2CD9CDEB97B2FC53 /* darwin_arm64-dbg */ = {
+			isa = PBXGroup;
+			children = (
+				87DF4EFB46DF8067F7D9B079 /* bin */,
+			);
+			path = "darwin_arm64-dbg";
+			sourceTree = "<group>";
+		};
+		33E4668B3EC9025F0B2EA128 /* DrinkDiscoveryInterface */ = {
+			isa = PBXGroup;
+			children = (
+				6B8D0AF1EC88A178192FC10A /* Sources */,
+			);
+			path = DrinkDiscoveryInterface;
+			sourceTree = "<group>";
+		};
+		35B72AD12824DAFA02E4E362 /* DrinkDetailsInterface */ = {
+			isa = PBXGroup;
+			children = (
+				DC84E7FE7E7A6616D0969B20 /* Sources */,
+			);
+			path = DrinkDetailsInterface;
+			sourceTree = "<group>";
+		};
+		35E5387E86EB050A0E61AE75 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C22B5CC1DE9EF4FCE19F7313 /* AppIcon.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3A1E608D175F059AC0103680 /* Cartography */ = {
+			isa = PBXGroup;
+			children = (
+				0276F02C0583E535C789DC50 /* Frameworks */,
+			);
+			path = Cartography;
+			sourceTree = "<group>";
+		};
+		4B508BD60827F22164369639 /* BazelSampleXcodeProj */ = {
+			isa = PBXGroup;
+			children = (
+				E68F386DA53A61AE2F285461 /* BazelSampleXcodeProj-params */,
+			);
+			path = BazelSampleXcodeProj;
+			sourceTree = "<group>";
+		};
+		4C0E16A58DCA4C50BDF3E34A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EA6C3325043343EDE0A8B60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE5381F0D5F58B81E17F7500 /* Kingfisher.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		53F15C12D1212370EAC99F70 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5DA11D093DE042AAE5D38EDA /* Resources */,
+				6D4671B871CBF8941066812B /* Sources */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5CA98E530AE6ED958CC7174D /* BazelSample */ = {
+			isa = PBXGroup;
+			children = (
+				4B508BD60827F22164369639 /* BazelSampleXcodeProj */,
+			);
+			path = BazelSample;
+			sourceTree = "<group>";
+		};
+		5DA11D093DE042AAE5D38EDA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35E5387E86EB050A0E61AE75 /* Assets */,
+				D656312BA9EE758EFC853548 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6088987A83A8EA601FA9E46F /* lottie-ios */ = {
+			isa = PBXGroup;
+			children = (
+				AA20B1B5EC50F3C87D38FC62 /* Frameworks */,
+			);
+			path = "lottie-ios";
+			sourceTree = "<group>";
+		};
+		628744773730B5971F123B67 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				0018E7452AF602DFBBFCDB5A /* BazelSample */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		69967336B3B6EA9BA3F4B1B2 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				4B59385BDFF6414868D1AFE7 /* GetAlcoholDrinkPreviews.swift */,
+				9B20A5AA91F66DD4D1A22EDA /* GetDrink.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		69F98D7FFDF6056B48EA92C0 /* DrinkData */ = {
+			isa = PBXGroup;
+			children = (
+				B02560DE87A80742A197D39A /* Sources */,
+			);
+			path = DrinkData;
+			sourceTree = "<group>";
+		};
+		6B304B7AA64CD97B94DBC299 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0F5132319BBB5CCDB9768C8A /* Network.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6B8D0AF1EC88A178192FC10A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				57115062B9BC601F8D9D097F /* DrinkDiscoveryScene.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6D4671B871CBF8941066812B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E7F6FEAD8D8B01FB6C6F359A /* AppDelegate.swift */,
+				EB4594E886334A1BF1F4C578 /* AppDelegate+RootComponent.swift */,
+				CBE63B8B6233F768BE0456C9 /* RootViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6E1732C4CF557D5FF9E5D1EC /* BazelSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				604E1900A163B4BF6BA066FF /* Info.plist */,
+			);
+			path = BazelSampleApp;
+			sourceTree = "<group>";
+		};
+		7352117AC0FD31A05EC1C5AD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				746D3F53428421158473D3A9 /* Generated */,
+				096E746A77A03EBD7D8C68A9 /* DrinkDetailsInteractor.swift */,
+				84F6DF325D243D3664E4B17B /* DrinkDetailsPresenter.swift */,
+				CC8E3FB15EDA9F5EF2FA310D /* DrinkDetailsRouter.swift */,
+				49C55467C73F84DF290EEAB2 /* DrinkDetailsView.swift */,
+				D96966E1377FC607F94784C4 /* DrinkDetailsViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		746D3F53428421158473D3A9 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				AEA19CB559EB4E40D1F424E8 /* Images.swift */,
+				560119F01687D666D65EFAF2 /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		7A092E0F0CFF175A065DACB5 /* ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923 */ = {
+			isa = PBXGroup;
+			children = (
+				FC2F0879EEC2A480B457CF93 /* bin */,
+			);
+			path = "ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+			sourceTree = "<group>";
+		};
+		7E55E751FC0472BF04D0D4E5 /* Lottie.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				9B662B3F2F0411C2F62812BE /* ios-arm64_x86_64-simulator */,
+			);
+			path = Lottie.xcframework;
+			sourceTree = "<group>";
+		};
+		835D8BD90112BF3C79EEEB6B /* NetworkInterface */ = {
+			isa = PBXGroup;
+			children = (
+				B6A727516F2BD5FB882BDF13 /* Sources */,
+			);
+			path = NetworkInterface;
+			sourceTree = "<group>";
+		};
+		85D2F784DBA8F1D2932F6D1F /* CocktailDB */ = {
+			isa = PBXGroup;
+			children = (
+				F200E643664B426D7F218C01 /* Sources */,
+			);
+			path = CocktailDB;
+			sourceTree = "<group>";
+		};
+		87DF4EFB46DF8067F7D9B079 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				0CE3803D30E37666CF2F20A4 /* external */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		9350BF22E038250763989E10 /* generator */ = {
+			isa = PBXGroup;
+			children = (
+				5CA98E530AE6ED958CC7174D /* BazelSample */,
+			);
+			path = generator;
+			sourceTree = "<group>";
+		};
+		98BAED5F56B1800E01A8EFFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1848C168FA48E87C862C000D /* BazelSample.app */,
+				37EB30286A75DC3EC53EB50A /* libCocktailDB.a */,
+				0229CC5BEF97B12C8B565138 /* libCocktailDBInterface.a */,
+				DF16398DEF5E237E2381A737 /* libCommonUI.a */,
+				D39B3C03400C9F276210A02B /* libDrinkData.a */,
+				8BA187D70A296DE9F28163E5 /* libDrinkDetails.a */,
+				BD0249100CE76E4A0294C856 /* libDrinkDetailsInterface.a */,
+				50CA1DB0976ABEF66A454D66 /* libDrinkDiscovery.a */,
+				7A259B1A97B58CEDCD07E508 /* libDrinkDiscoveryInterface.a */,
+				370DA5EB6864816C48FA2758 /* libDrinkDomain.a */,
+				43EDA0E0D1FE93581460E50C /* libNetworking.a */,
+				90952C08AF1B5F868626845A /* libNetworkInterface.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B662B3F2F0411C2F62812BE /* ios-arm64_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				0E55ECD47529AD4BE63B4770 /* Lottie.framework */,
+			);
+			path = "ios-arm64_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		9BCD5AC168F08CA2D73A9E2B /* DrinkDiscovery */ = {
+			isa = PBXGroup;
+			children = (
+				0BC981481AA807F12D2EAB46 /* Sources */,
+			);
+			path = DrinkDiscovery;
+			sourceTree = "<group>";
+		};
+		9BEAA846443073431681C68B /* BazelSample */ = {
+			isa = PBXGroup;
+			children = (
+				85D2F784DBA8F1D2932F6D1F /* CocktailDB */,
+				BFBACAB0D17523CEE41AF058 /* CocktailDBInterface */,
+				E5FD2B890D47EEFD9C248186 /* CommonUI */,
+				69F98D7FFDF6056B48EA92C0 /* DrinkData */,
+				096968C3CEB5367F6938EC02 /* DrinkDetails */,
+				35B72AD12824DAFA02E4E362 /* DrinkDetailsInterface */,
+				9BCD5AC168F08CA2D73A9E2B /* DrinkDiscovery */,
+				33E4668B3EC9025F0B2EA128 /* DrinkDiscoveryInterface */,
+				9C0F5486C99A6227018ADDAC /* DrinkDomain */,
+				53F15C12D1212370EAC99F70 /* Main */,
+				E995B743396AFB21D16843E5 /* Networking */,
+				835D8BD90112BF3C79EEEB6B /* NetworkInterface */,
+				5BEC27ACB912FA7FD858E346 /* BUILD.bazel */,
+			);
+			path = BazelSample;
+			sourceTree = "<group>";
+		};
+		9C0F5486C99A6227018ADDAC /* DrinkDomain */ = {
+			isa = PBXGroup;
+			children = (
+				A767DD1AF6F40FFDAFAF3365 /* Sources */,
+			);
+			path = DrinkDomain;
+			sourceTree = "<group>";
+		};
+		9CC165F64DC5828B6466ABA9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28C65008425D29DA9746FDD9 /* Generated */,
+				83AF9D029AF06D50784A06C2 /* AlphaAnimation.swift */,
+				4961EB9D80FCE8E7F054C8EF /* EmptyState.swift */,
+				2F1AA064C5B9DA8B56EFE642 /* GreatButton.swift */,
+				C3CC944EE0017DFC67889AD5 /* LoadingView.swift */,
+				9B268B5EEEFB1873E838228D /* StatefulView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A767DD1AF6F40FFDAFAF3365 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				69967336B3B6EA9BA3F4B1B2 /* UseCases */,
+				3FFAD35B767EF14020EAB682 /* Drink.swift */,
+				F468E4BC6B7ADF0B04B02864 /* DrinkRepositories.swift */,
+				F364F6F2014E1968177217AF /* DrinkUseCases.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A8011FA29B74E5FE99075D3E /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				4EA6C3325043343EDE0A8B60 /* Frameworks */,
+			);
+			path = Kingfisher;
+			sourceTree = "<group>";
+		};
+		AA20B1B5EC50F3C87D38FC62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E55E751FC0472BF04D0D4E5 /* Lottie.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		B02560DE87A80742A197D39A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6DA1092A7F5850B81C5E63BB /* CocktailRepository.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B6A727516F2BD5FB882BDF13 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				330E838E424ABDDBF29C3EA1 /* Networking.swift */,
+				578E7C3AEE044784272CA473 /* NetworkResponseSerializing.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BE5381F0D5F58B81E17F7500 /* Kingfisher.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				2149992432A9A43CFEEA440A /* ios-arm64_x86_64-simulator */,
+			);
+			path = Kingfisher.xcframework;
+			sourceTree = "<group>";
+		};
+		BFBACAB0D17523CEE41AF058 /* CocktailDBInterface */ = {
+			isa = PBXGroup;
+			children = (
+				C4529431E5C6034BAE2C5BF2 /* Sources */,
+			);
+			path = CocktailDBInterface;
+			sourceTree = "<group>";
+		};
+		C4529431E5C6034BAE2C5BF2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BD823B0C224152658D8E4BC6 /* CocktailDBClient.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CB2B274FD22CAE08C9998260 /* rules_xcodeproj */ = {
+			isa = PBXGroup;
+			children = (
+				6E1732C4CF557D5FF9E5D1EC /* BazelSampleApp */,
+			);
+			path = rules_xcodeproj;
+			sourceTree = "<group>";
+		};
+		D7B2CC756D0185F2E9FDDAB7 /* ios-arm64_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				35185738D21877738F157C4C /* Cartography.framework */,
+			);
+			path = "ios-arm64_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		D82B5E602EBB197858B678BD /* Bazel Generated Files */ = {
+			isa = PBXGroup;
+			children = (
+				E81D492D9DBD167823753DFE /* applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923 */,
+				31ECFA4F2CD9CDEB97B2FC53 /* darwin_arm64-dbg */,
+				7A092E0F0CFF175A065DACB5 /* ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923 */,
+			);
+			name = "Bazel Generated Files";
+			path = "bazel-out";
+			sourceTree = SOURCE_ROOT;
+		};
+		D9988F261A0EFC70A352D434 /* rules_xcodeproj_generated */ = {
+			isa = PBXGroup;
+			children = (
+				9350BF22E038250763989E10 /* generator */,
+			);
+			path = rules_xcodeproj_generated;
+			sourceTree = "<group>";
+		};
+		DC84E7FE7E7A6616D0969B20 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F6B20593317563187CAB3595 /* DrinkDetailsScene.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E5FD2B890D47EEFD9C248186 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				9CC165F64DC5828B6466ABA9 /* Sources */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		E68F386DA53A61AE2F285461 /* BazelSampleXcodeProj-params */ = {
+			isa = PBXGroup;
+			children = (
+				A4083CC9C81CCB2978B7A82E /* BazelSampleApp.11.link.params */,
+			);
+			path = "BazelSampleXcodeProj-params";
+			sourceTree = "<group>";
+		};
+		E81D492D9DBD167823753DFE /* applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923 */ = {
+			isa = PBXGroup;
+			children = (
+				628744773730B5971F123B67 /* bin */,
+			);
+			path = "applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+			sourceTree = "<group>";
+		};
+		E995B743396AFB21D16843E5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6B304B7AA64CD97B94DBC299 /* Sources */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F200E643664B426D7F218C01 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D54E42FB499A7368BE82DECE /* CocktailDB.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FC2F0879EEC2A480B457CF93 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				09C11CD8BE96C6F700D94CDD /* BazelSample */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		129D597DE80F9C95323981CD /* CommonUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DA7D22799C516B38229ADB1 /* Build configuration list for PBXNativeTarget "CommonUI" */;
+			buildPhases = (
+				B690AA1885C8904CD4773CE5 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				AFD61C1407CB82B84A3AC7D8 /* Create Compile Dependencies */,
+				E4EB62CD1C2331E6B39276E9 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9030A0071BD26C40B0CB4792 /* PBXTargetDependency */,
+			);
+			name = CommonUI;
+			productName = CommonUI;
+			productType = "com.apple.product-type.library.static";
+		};
+		180E9F02196683F5D136CC3E /* BazelSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98CC16A99A8EED7ACD5E71A9 /* Build configuration list for PBXNativeTarget "BazelSampleApp" */;
+			buildPhases = (
+				355D4CD2B262B62205F4267F /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				3B7FED1D5B3B5BED2F0016D5 /* Create Compile Dependencies */,
+				AC2390F0B2B4B76DEA0E8C46 /* Create Link Dependencies */,
+				A686962EE8432C44F4F95DD4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6310745B17C1A724406AEEB9 /* PBXTargetDependency */,
+			);
+			name = BazelSampleApp;
+			productName = BazelSample;
+			productReference = 1848C168FA48E87C862C000D /* BazelSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D3AAEB9CC4D376FA449AFCF /* DrinkDetails */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6EB434FF256B65A99388089 /* Build configuration list for PBXNativeTarget "DrinkDetails" */;
+			buildPhases = (
+				0B9A7BB99C371C2611F956DA /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				9D507F4A778300FB46D56AE9 /* Create Compile Dependencies */,
+				07FFBE441A101B42587FD576 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EDBECCDA60B752FCE8F2C0E /* PBXTargetDependency */,
+			);
+			name = DrinkDetails;
+			productName = DrinkDetails;
+			productType = "com.apple.product-type.library.static";
+		};
+		3F287B080346C6A04C37721C /* DrinkData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4876BD6D8ADC7C2B4EF0C90 /* Build configuration list for PBXNativeTarget "DrinkData" */;
+			buildPhases = (
+				972F135563C7856911C1EEE2 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				8CF2D1AF661A1AE19086C2C7 /* Create Compile Dependencies */,
+				219C7EC92D0C1F2392064403 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F01A02333CD3F74BF6FF7A00 /* PBXTargetDependency */,
+			);
+			name = DrinkData;
+			productName = DrinkData;
+			productType = "com.apple.product-type.library.static";
+		};
+		59CA9A5F400410127989562D /* DrinkDiscoveryInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC56ED688A5EE1F00BB8C686 /* Build configuration list for PBXNativeTarget "DrinkDiscoveryInterface" */;
+			buildPhases = (
+				0091A8A17612295AD6FF39AC /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				1B79C34A3599F60C986E1562 /* Create Compile Dependencies */,
+				8639E1B220D425EE85EAE13E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF303FDF49C489170ED078C6 /* PBXTargetDependency */,
+			);
+			name = DrinkDiscoveryInterface;
+			productName = DrinkDiscoveryInterface;
+			productType = "com.apple.product-type.library.static";
+		};
+		765D1623E9FD96876944EEE5 /* NetworkInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20EA91F215B47CB204B46D8B /* Build configuration list for PBXNativeTarget "NetworkInterface" */;
+			buildPhases = (
+				93568AD45F9ED0B50D550253 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				C890AB288D3E8124C7939A49 /* Create Compile Dependencies */,
+				FBB069847DFFFB16EFADF73A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F6B7B2B42BFFBABD41FE9F4 /* PBXTargetDependency */,
+			);
+			name = NetworkInterface;
+			productName = NetworkInterface;
+			productType = "com.apple.product-type.library.static";
+		};
+		7AA7A12B6C15AC7744A4B58A /* CocktailDBInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FC45F4033E72795F9C5CF8 /* Build configuration list for PBXNativeTarget "CocktailDBInterface" */;
+			buildPhases = (
+				96857C0BD6AB0F77228A354D /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				6FCB74940406849F9B8A39C2 /* Create Compile Dependencies */,
+				B00D04D91A18BE37AD35D0B6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F57BBC23C7FD2EF78D131E38 /* PBXTargetDependency */,
+			);
+			name = CocktailDBInterface;
+			productName = CocktailDBInterface;
+			productType = "com.apple.product-type.library.static";
+		};
+		B01E179D5E301CFF40742192 /* CocktailDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5464D9F98D341CA8DBBF62 /* Build configuration list for PBXNativeTarget "CocktailDB" */;
+			buildPhases = (
+				21C1A6048BEF8198D527D32B /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				C6E67844F65CBB4C74006EA4 /* Create Compile Dependencies */,
+				8A0714C5B00F37A3D4E1B2C1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46240BA78E038BFF4EBCD0B6 /* PBXTargetDependency */,
+			);
+			name = CocktailDB;
+			productName = CocktailDB;
+			productType = "com.apple.product-type.library.static";
+		};
+		B88EE3448150497204EBD52F /* DrinkDiscovery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E106EBE8310861231B9939DD /* Build configuration list for PBXNativeTarget "DrinkDiscovery" */;
+			buildPhases = (
+				9F6E667EA20C294ED8AA387E /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				97443E66FC0BCB5A96F29640 /* Create Compile Dependencies */,
+				9AFCD3A983F58A586FE7C9EA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDCD7C0D54CE7B626CBD3519 /* PBXTargetDependency */,
+			);
+			name = DrinkDiscovery;
+			productName = DrinkDiscovery;
+			productType = "com.apple.product-type.library.static";
+		};
+		E1715483AC2F528CB7A04724 /* DrinkDetailsInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 964140A466617393BFCEFC53 /* Build configuration list for PBXNativeTarget "DrinkDetailsInterface" */;
+			buildPhases = (
+				F827816EA8FFAAE957257D61 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				CA421C36E21CED5B30DAC50F /* Create Compile Dependencies */,
+				271A9FB1067BA0D34A69A01F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B349A34E9537FBB642B94209 /* PBXTargetDependency */,
+			);
+			name = DrinkDetailsInterface;
+			productName = DrinkDetailsInterface;
+			productType = "com.apple.product-type.library.static";
+		};
+		F618EE2364C78416CDBF11DE /* DrinkDomain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D55196DBEDE7F88158FED427 /* Build configuration list for PBXNativeTarget "DrinkDomain" */;
+			buildPhases = (
+				A53DCCAD3E1B152D2BED08E6 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				2F3BB80323649A4E9C9A0E53 /* Create Compile Dependencies */,
+				5540BB8532E0E58749BA85E5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D1A8015E9371005253845D2 /* PBXTargetDependency */,
+			);
+			name = DrinkDomain;
+			productName = DrinkDomain;
+			productType = "com.apple.product-type.library.static";
+		};
+		FB2BA6E4830365D6777D854F /* Networking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72C3E6F1557EF2FC68EAF966 /* Build configuration list for PBXNativeTarget "Networking" */;
+			buildPhases = (
+				5E268C0F87802D22F1C5D994 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				D8AF8F443A29E99760827231 /* Create Compile Dependencies */,
+				028B1D68A32836E5D391F00C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D72C90DB8912E81B91D4F112 /* PBXTargetDependency */,
+			);
+			name = Networking;
+			productName = Networking;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C1F9BA76197290B93C9F672 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 9999;
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					129D597DE80F9C95323981CD = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 9999;
+					};
+					180E9F02196683F5D136CC3E = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 9999;
+					};
+					1D3AAEB9CC4D376FA449AFCF = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 9999;
+					};
+					3F287B080346C6A04C37721C = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 9999;
+					};
+					59CA9A5F400410127989562D = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 9999;
+					};
+					758C42AD9F96BE2638F83BCD = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					765D1623E9FD96876944EEE5 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 9999;
+					};
+					7AA7A12B6C15AC7744A4B58A = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 9999;
+					};
+					B01E179D5E301CFF40742192 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 9999;
+					};
+					B88EE3448150497204EBD52F = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 9999;
+					};
+					E1715483AC2F528CB7A04724 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 9999;
+					};
+					F618EE2364C78416CDBF11DE = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 9999;
+					};
+					FB2BA6E4830365D6777D854F = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 9999;
+					};
+				};
+			};
+			buildConfigurationList = 398E469AEAEF475EFAC532E4 /* Build configuration list for PBXProject "BazelSample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 165A2986DC83FAFA18683FAE /* /Users/andre.alves/Documents/Works/xcodeproj_indexing_error_repro */;
+			productRefGroup = 98BAED5F56B1800E01A8EFFD /* Products */;
+			projectDirPath = /var/tmp/_bazel_andre.alves/d7e7459773eedd0100ecde5f5f2a0e6e/rules_xcodeproj.noindex/build_output_base/execroot/__main__;
+			projectRoot = "";
+			targets = (
+				758C42AD9F96BE2638F83BCD /* BazelDependencies */,
+				180E9F02196683F5D136CC3E /* BazelSampleApp */,
+				B01E179D5E301CFF40742192 /* CocktailDB */,
+				7AA7A12B6C15AC7744A4B58A /* CocktailDBInterface */,
+				129D597DE80F9C95323981CD /* CommonUI */,
+				3F287B080346C6A04C37721C /* DrinkData */,
+				1D3AAEB9CC4D376FA449AFCF /* DrinkDetails */,
+				E1715483AC2F528CB7A04724 /* DrinkDetailsInterface */,
+				B88EE3448150497204EBD52F /* DrinkDiscovery */,
+				59CA9A5F400410127989562D /* DrinkDiscoveryInterface */,
+				F618EE2364C78416CDBF11DE /* DrinkDomain */,
+				FB2BA6E4830365D6777D854F /* Networking */,
+				765D1623E9FD96876944EEE5 /* NetworkInterface */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0091A8A17612295AD6FF39AC /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0B9A7BB99C371C2611F956DA /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1B79C34A3599F60C986E1562 /* Create Compile Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SWIFT_PARAMS_FILE)",
+			);
+			name = "Create Compile Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swift.compile.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nperl -pe '\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n  s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/gx;\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"";
+			showEnvVarsInLog = 0;
+		};
+		21C1A6048BEF8198D527D32B /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2F3BB80323649A4E9C9A0E53 /* Create Compile Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SWIFT_PARAMS_FILE)",
+			);
+			name = "Create Compile Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swift.compile.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nperl -pe '\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n  s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/gx;\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"";
+			showEnvVarsInLog = 0;
+		};
+		355D4CD2B262B62205F4267F /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\nelse\n  \"$BAZEL_INTEGRATION_DIR/copy_outputs.sh\" \\\n    \"_BazelForcedCompile_.swift\" \\\n    \"BazelSample.app\" \\\n    \"$BAZEL_INTEGRATION_DIR/app.exclude.rsynclist\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3B7FED1D5B3B5BED2F0016D5 /* Create Compile Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SWIFT_PARAMS_FILE)",
+			);
+			name = "Create Compile Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swift.compile.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nperl -pe '\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n  s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/gx;\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"";
+			showEnvVarsInLog = 0;
+		};
+		5E268C0F87802D22F1C5D994 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FCB74940406849F9B8A39C2 /* Create Compile Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SWIFT_PARAMS_FILE)",
+			);
+			name = "Create Compile Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swift.compile.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nperl -pe '\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n  s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/gx;\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"";
+			showEnvVarsInLog = 0;
+		};
+		7AEAB77C810AA712F6C26B4A /* Create swift_debug_settings.py */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BAZEL_INTEGRATION_DIR)/$(CONFIGURATION)-swift_debug_settings.py",
+			);
+			name = "Create swift_debug_settings.py";
+			outputPaths = (
+				"$(OBJROOT)/$(CONFIGURATION)/swift_debug_settings.py",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "perl -pe '\n  # Replace \"__BAZEL_XCODE_DEVELOPER_DIR__\" with \"$(DEVELOPER_DIR)\"\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n\n  # Replace \"__BAZEL_XCODE_SDKROOT__\" with \"$(SDKROOT)\"\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n\n  # Replace build settings with their values\n  s/\n    \\$             # Match a dollar sign\n    (\\()?          # Optionally match an opening parenthesis and capture it\n    ([a-zA-Z_]\\w*) # Match a variable name and capture it\n    (?(1)\\))       # If an opening parenthesis was captured, match a closing parenthesis\n  /$ENV{$2}/gx;    # Replace the entire matched string with the value of the corresponding environment variable\n\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CF2D1AF661A1AE19086C2C7 /* Create Compile Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SWIFT_PARAMS_FILE)",
+			);
+			name = "Create Compile Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swift.compile.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nperl -pe '\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n  s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/gx;\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"";
+			showEnvVarsInLog = 0;
+		};
+		93568AD45F9ED0B50D550253 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96857C0BD6AB0F77228A354D /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		972F135563C7856911C1EEE2 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97443E66FC0BCB5A96F29640 /* Create Compile Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SWIFT_PARAMS_FILE)",
+			);
+			name = "Create Compile Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swift.compile.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nperl -pe '\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n  s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/gx;\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"";
+			showEnvVarsInLog = 0;
+		};
+		9D507F4A778300FB46D56AE9 /* Create Compile Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SWIFT_PARAMS_FILE)",
+			);
+			name = "Create Compile Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swift.compile.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nperl -pe '\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n  s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/gx;\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"";
+			showEnvVarsInLog = 0;
+		};
+		9F6E667EA20C294ED8AA387E /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A53DCCAD3E1B152D2BED08E6 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2390F0B2B4B76DEA0E8C46 /* Create Link Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(LINK_PARAMS_FILE)",
+			);
+			name = "Create Link Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/link.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"${ENABLE_PREVIEWS:-}\" == \"YES\" ]]; then\nperl -pe 's/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/g' \\\n  \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"\nelse\n  touch \"$SCRIPT_OUTPUT_FILE_0\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD61C1407CB82B84A3AC7D8 /* Create Compile Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SWIFT_PARAMS_FILE)",
+			);
+			name = "Create Compile Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swift.compile.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nperl -pe '\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n  s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/gx;\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"";
+			showEnvVarsInLog = 0;
+		};
+		B690AA1885C8904CD4773CE5 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E67844F65CBB4C74006EA4 /* Create Compile Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SWIFT_PARAMS_FILE)",
+			);
+			name = "Create Compile Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swift.compile.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nperl -pe '\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n  s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/gx;\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"";
+			showEnvVarsInLog = 0;
+		};
+		C890AB288D3E8124C7939A49 /* Create Compile Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SWIFT_PARAMS_FILE)",
+			);
+			name = "Create Compile Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swift.compile.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nperl -pe '\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n  s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/gx;\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"";
+			showEnvVarsInLog = 0;
+		};
+		CA421C36E21CED5B30DAC50F /* Create Compile Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SWIFT_PARAMS_FILE)",
+			);
+			name = "Create Compile Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swift.compile.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nperl -pe '\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n  s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/gx;\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"";
+			showEnvVarsInLog = 0;
+		};
+		D8AF8F443A29E99760827231 /* Create Compile Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SWIFT_PARAMS_FILE)",
+			);
+			name = "Create Compile Dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swift.compile.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nperl -pe '\n  s/__BAZEL_XCODE_DEVELOPER_DIR__/\\$(DEVELOPER_DIR)/g;\n  s/__BAZEL_XCODE_SDKROOT__/\\$(SDKROOT)/g;\n  s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/gx;\n' \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"";
+			showEnvVarsInLog = 0;
+		};
+		E1D880A1D5EA90CDEE23271B /* Generate Bazel Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Bazel Dependencies";
+			outputFileListPaths = (
+				"$(INTERNAL_DIR)/external.xcfilelist",
+				"$(INTERNAL_DIR)/generated.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$BAZEL_INTEGRATION_DIR/generate_bazel_dependencies.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F827816EA8FFAAE957257D61 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		028B1D68A32836E5D391F00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392040816892627462A74089 /* Network.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FFBE441A101B42587FD576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9083A5FADAEBB3B526FF7D /* DrinkDetailsInteractor.swift in Sources */,
+				791508AD681357C617A5D8DD /* DrinkDetailsPresenter.swift in Sources */,
+				FF53E3B1076B40DCDBF88D30 /* DrinkDetailsRouter.swift in Sources */,
+				E4C08C2FC3083E2042D4C11B /* DrinkDetailsView.swift in Sources */,
+				22F268D5FCFB8762EC971712 /* DrinkDetailsViewController.swift in Sources */,
+				9E105AE56E512CCA74B81446 /* Images.swift in Sources */,
+				58086476CC78319CAD67ECE3 /* Strings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		219C7EC92D0C1F2392064403 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EEDE082F1CE0B75059F3884 /* CocktailRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		271A9FB1067BA0D34A69A01F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E9F73E848D6DA4168542241 /* DrinkDetailsScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5540BB8532E0E58749BA85E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4706262787B77E746BE688 /* Drink.swift in Sources */,
+				A6E0AB5E40E1E53AD40B62F6 /* DrinkRepositories.swift in Sources */,
+				67E43D0567C0207E1B62FEDE /* DrinkUseCases.swift in Sources */,
+				6161971DF258DBDE9EE2637A /* GetAlcoholDrinkPreviews.swift in Sources */,
+				83A398683ACBC6501D717496 /* GetDrink.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8639E1B220D425EE85EAE13E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B78570318E6CCE8CA63D04 /* DrinkDiscoveryScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0714C5B00F37A3D4E1B2C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC344E3F530B6FC62FBF20A3 /* CocktailDB.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFCD3A983F58A586FE7C9EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9580B30778BAB7EBA4FEA521 /* DrinkDiscoveryInteractor.swift in Sources */,
+				318CCA5C6C53DE1B9E8EBE1B /* DrinkDiscoveryPresenter.swift in Sources */,
+				28783C0CC21D396AF5466A62 /* DrinkDiscoveryRouter.swift in Sources */,
+				534A2F6AABF54EC2CDDC6471 /* DrinkDiscoveryTableViewCell.swift in Sources */,
+				C6DCB348977799747372185F /* DrinkDiscoveryView.swift in Sources */,
+				9D4AA4AAF36F5454169325CA /* DrinkDiscoveryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A686962EE8432C44F4F95DD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD41F7C6E156A570BFAD324B /* AppDelegate+RootComponent.swift in Sources */,
+				2DDF190E0AE85C63785173EC /* AppDelegate.swift in Sources */,
+				F74A9D9148BBE746498EAE0A /* RootViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00D04D91A18BE37AD35D0B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299EA0D1F14BE1C2D88BA549 /* CocktailDBClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4EB62CD1C2331E6B39276E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE5994EC9DB6B719650DD68 /* AlphaAnimation.swift in Sources */,
+				FB7212B496D5E90230DC2C80 /* EmptyState.swift in Sources */,
+				CD8F89FEF886F9FA182330E9 /* Files.swift in Sources */,
+				64B0E06B7880D7012F97AEB0 /* Images.swift in Sources */,
+				7790640E41E454C1BBEB7D69 /* Strings.swift in Sources */,
+				855102601BD084737570E149 /* GreatButton.swift in Sources */,
+				9F223043B33A6FF72BC48095 /* LoadingView.swift in Sources */,
+				DECD0ECBA3F05F3E59823501 /* StatefulView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB069847DFFFB16EFADF73A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC2C2715A9600FF0E06EE56 /* NetworkResponseSerializing.swift in Sources */,
+				FAE700D3561136492FDA7D83 /* Networking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D1A8015E9371005253845D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 758C42AD9F96BE2638F83BCD /* BazelDependencies */;
+			targetProxy = 83BFEBEBB114298DFFF6F1EC /* PBXContainerItemProxy */;
+		};
+		46240BA78E038BFF4EBCD0B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 758C42AD9F96BE2638F83BCD /* BazelDependencies */;
+			targetProxy = 613BAC712BE72AB49398F413 /* PBXContainerItemProxy */;
+		};
+		6310745B17C1A724406AEEB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 758C42AD9F96BE2638F83BCD /* BazelDependencies */;
+			targetProxy = F724A872B3F3E9136B3F3B97 /* PBXContainerItemProxy */;
+		};
+		6EDBECCDA60B752FCE8F2C0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 758C42AD9F96BE2638F83BCD /* BazelDependencies */;
+			targetProxy = 3BA372D80C0CE82CED944C6F /* PBXContainerItemProxy */;
+		};
+		7F6B7B2B42BFFBABD41FE9F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 758C42AD9F96BE2638F83BCD /* BazelDependencies */;
+			targetProxy = E3642339F1624C653A2AE918 /* PBXContainerItemProxy */;
+		};
+		9030A0071BD26C40B0CB4792 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 758C42AD9F96BE2638F83BCD /* BazelDependencies */;
+			targetProxy = 2BCBB2C2E8FB0C2526A10E73 /* PBXContainerItemProxy */;
+		};
+		AF303FDF49C489170ED078C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 758C42AD9F96BE2638F83BCD /* BazelDependencies */;
+			targetProxy = 6C78419C000098A7611BCF0C /* PBXContainerItemProxy */;
+		};
+		B349A34E9537FBB642B94209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 758C42AD9F96BE2638F83BCD /* BazelDependencies */;
+			targetProxy = 991C30B284C010DE1E148B15 /* PBXContainerItemProxy */;
+		};
+		CDCD7C0D54CE7B626CBD3519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 758C42AD9F96BE2638F83BCD /* BazelDependencies */;
+			targetProxy = CEFF06D0360119D70C95E145 /* PBXContainerItemProxy */;
+		};
+		D72C90DB8912E81B91D4F112 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 758C42AD9F96BE2638F83BCD /* BazelDependencies */;
+			targetProxy = 2C2A458436425FC2BCB84161 /* PBXContainerItemProxy */;
+		};
+		F01A02333CD3F74BF6FF7A00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 758C42AD9F96BE2638F83BCD /* BazelDependencies */;
+			targetProxy = 46BBDC99F34A54563214E42E /* PBXContainerItemProxy */;
+		};
+		F57BBC23C7FD2EF78D131E38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 758C42AD9F96BE2638F83BCD /* BazelDependencies */;
+			targetProxy = F65DB18A35D9BA3C45579A82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CF120C8F1433A6E0E000C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//BazelSample:DrinkData";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				BAZEL_TARGET_ID = "@//BazelSample:DrinkData ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = DrinkData;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml @$(DERIVED_FILE_DIR)/swift.compile.params -Xfrontend -vfsoverlay$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkData.vfsoverlay.yaml -I/__build_bazel_rules_swift/swiftmodules";
+				PRODUCT_MODULE_NAME = DrinkData;
+				PRODUCT_NAME = DrinkData;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PARAMS_FILE = "$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkData.rules_xcodeproj.swift.compile.params";
+				TARGET_NAME = DrinkData;
+			};
+			name = Debug;
+		};
+		0D51BE8D6373B8B715F98F7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BAZEL_COMPILE_TARGET_IDS = "@//BazelSample:BazelSample ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_COMPILE_TARGET_IDS[sdk=iphonesimulator*]" = "$(BAZEL_COMPILE_TARGET_IDS)";
+				BAZEL_LABEL = "@//BazelSample:BazelSampleApp";
+				BAZEL_OUTPUTS_PRODUCT = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/BazelSample.app";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				BAZEL_TARGET_ID = "@//BazelSample:BazelSampleApp applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				BUILT_PRODUCTS_DIR = "$(CONFIGURATION_BUILD_DIR)";
+				CODE_SIGN_STYLE = Manual;
+				COMPILE_TARGET_NAME = BazelSample;
+				DEPLOYMENT_LOCATION = NO;
+				INFOPLIST_FILE = "$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/rules_xcodeproj/BazelSampleApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LINK_PARAMS_FILE = "$(BAZEL_OUT)/darwin_arm64-dbg/bin/external/rules_xcodeproj_generated/generator/BazelSample/BazelSampleXcodeProj/BazelSampleXcodeProj-params/BazelSampleApp.11.link.params";
+				OTHER_LDFLAGS = "@$(DERIVED_FILE_DIR)/link.params";
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -Xcc -ivfsoverlay -Xcc $(OBJROOT)/bazel-out-overlay.yaml -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml $(PREVIEWS_SWIFT_INCLUDE__$(ENABLE_PREVIEWS)) @$(DERIVED_FILE_DIR)/swift.compile.params -Xfrontend -vfsoverlay$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/BazelSample.vfsoverlay.yaml -I/__build_bazel_rules_swift/swiftmodules -F$(SRCROOT)/Pods/lottie-ios/Frameworks/Lottie.xcframework/ios-arm64_x86_64-simulator -F$(SRCROOT)/Pods/Cartography/Frameworks/Cartography.xcframework/ios-arm64_x86_64-simulator -F$(SRCROOT)/Pods/Kingfisher/Frameworks/Kingfisher.xcframework/ios-arm64_x86_64-simulator";
+				PREVIEWS_SWIFT_INCLUDE__ = "";
+				PREVIEWS_SWIFT_INCLUDE__NO = "";
+				PREVIEWS_SWIFT_INCLUDE__YES = "-I bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.bazelsample;
+				PRODUCT_MODULE_NAME = BazelSample;
+				PRODUCT_NAME = BazelSample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PARAMS_FILE = "$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/BazelSample.rules_xcodeproj.swift.compile.params";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = BazelSampleApp;
+			};
+			name = Debug;
+		};
+		1B877143C418F9D195A5A343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//BazelSample:DrinkDomain";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				BAZEL_TARGET_ID = "@//BazelSample:DrinkDomain ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = DrinkDomain;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml @$(DERIVED_FILE_DIR)/swift.compile.params -Xfrontend -vfsoverlay$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDomain.vfsoverlay.yaml -I/__build_bazel_rules_swift/swiftmodules";
+				PRODUCT_MODULE_NAME = DrinkDomain;
+				PRODUCT_NAME = DrinkDomain;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PARAMS_FILE = "$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDomain.rules_xcodeproj.swift.compile.params";
+				TARGET_NAME = DrinkDomain;
+			};
+			name = Debug;
+		};
+		201C239AE39D9F25461E21D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//BazelSample:NetworkInterface";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				BAZEL_TARGET_ID = "@//BazelSample:NetworkInterface ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = NetworkInterface;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml @$(DERIVED_FILE_DIR)/swift.compile.params -Xfrontend -vfsoverlay$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/NetworkInterface.vfsoverlay.yaml -I/__build_bazel_rules_swift/swiftmodules";
+				PRODUCT_MODULE_NAME = NetworkInterface;
+				PRODUCT_NAME = NetworkInterface;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PARAMS_FILE = "$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/NetworkInterface.rules_xcodeproj.swift.compile.params";
+				TARGET_NAME = NetworkInterface;
+			};
+			name = Debug;
+		};
+		21CAE0F85D730D0655CE821D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//BazelSample:DrinkDiscoveryInterface";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				BAZEL_TARGET_ID = "@//BazelSample:DrinkDiscoveryInterface ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = DrinkDiscoveryInterface;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml @$(DERIVED_FILE_DIR)/swift.compile.params -Xfrontend -vfsoverlay$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDiscoveryInterface.vfsoverlay.yaml -I/__build_bazel_rules_swift/swiftmodules";
+				PRODUCT_MODULE_NAME = DrinkDiscoveryInterface;
+				PRODUCT_NAME = DrinkDiscoveryInterface;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PARAMS_FILE = "$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDiscoveryInterface.rules_xcodeproj.swift.compile.params";
+				TARGET_NAME = DrinkDiscoveryInterface;
+			};
+			name = Debug;
+		};
+		2C9A186ACA6EF78A51AF0BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BAZEL_CONFIG = rules_xcodeproj;
+				BAZEL_EXTERNAL = "$(BAZEL_OUTPUT_BASE)/external";
+				BAZEL_INTEGRATION_DIR = "$(INTERNAL_DIR)/bazel";
+				BAZEL_LLDB_INIT = "$(HOME)/.lldbinit-rules_xcodeproj";
+				BAZEL_OUT = "$(PROJECT_DIR)/bazel-out";
+				BAZEL_OUTPUT_BASE = "$(_BAZEL_OUTPUT_BASE:standardizepath)";
+				BAZEL_WORKSPACE_ROOT = "$(SRCROOT)";
+				BUILD_DIR = "$(SYMROOT)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				BUILD_WORKSPACE_DIRECTORY = "$(SRCROOT)";
+				BUILT_PRODUCTS_DIR = "$(INDEXING_BUILT_PRODUCTS_DIR__$(INDEX_ENABLE_BUILD_ARENA))";
+				CC = "$(BAZEL_INTEGRATION_DIR)/clang.sh";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(BAZEL_PACKAGE_BIN_DIR)";
+				COPY_PHASE_STRIP = NO;
+				CXX = "$(BAZEL_INTEGRATION_DIR)/clang.sh";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_LOCATION = "$(INDEXING_DEPLOYMENT_LOCATION__$(INDEX_ENABLE_BUILD_ARENA)),";
+				DSTROOT = "$(PROJECT_TEMP_DIR)";
+				ENABLE_DEFAULT_SEARCH_PATHS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INDEXING_BUILT_PRODUCTS_DIR__ = "$(INDEXING_BUILT_PRODUCTS_DIR__NO)";
+				INDEXING_BUILT_PRODUCTS_DIR__NO = "$(BUILD_DIR)";
+				INDEXING_BUILT_PRODUCTS_DIR__YES = "$(CONFIGURATION_BUILD_DIR)";
+				INDEXING_DEPLOYMENT_LOCATION__ = "$(INDEXING_DEPLOYMENT_LOCATION__NO)";
+				INDEXING_DEPLOYMENT_LOCATION__NO = YES;
+				INDEXING_DEPLOYMENT_LOCATION__YES = NO;
+				INDEXING_PROJECT_DIR__ = "$(INDEXING_PROJECT_DIR__NO)";
+				INDEXING_PROJECT_DIR__NO = "$(PROJECT_DIR)";
+				INDEXING_PROJECT_DIR__YES = /var/tmp/_bazel_andre.alves/d7e7459773eedd0100ecde5f5f2a0e6e/rules_xcodeproj.noindex/indexbuild_output_base/execroot/__main__;
+				INDEX_DATA_STORE_DIR = "$(INDEX_DATA_STORE_DIR)";
+				INDEX_FORCE_SCRIPT_EXECUTION = YES;
+				INDEX_IMPORT = "$(BAZEL_OUT)/darwin_arm64-opt-exec-2B5CBBC6/bin/external/rules_xcodeproj_index_import/index-import";
+				INSTALL_PATH = "$(BAZEL_PACKAGE_BIN_DIR)/$(TARGET_NAME)/bin";
+				INTERNAL_DIR = "$(PROJECT_FILE_PATH)/rules_xcodeproj";
+				LD = "$(BAZEL_INTEGRATION_DIR)/ld.sh";
+				LDPLUSPLUS = "$(BAZEL_INTEGRATION_DIR)/ld.sh";
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_OBJC_ABI_VERSION = "";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBTOOL = "$(BAZEL_INTEGRATION_DIR)/libtool.sh";
+				ONLY_ACTIVE_ARCH = YES;
+				PROJECT_DIR = "$(INDEXING_PROJECT_DIR__$(INDEX_ENABLE_BUILD_ARENA))";
+				RESOLVED_REPOSITORIES = "\".\" \"/Users/andre.alves/Documents/Works/xcodeproj_indexing_error_repro\"";
+				RULES_XCODEPROJ_BUILD_MODE = bazel;
+				SCHEME_TARGET_IDS_FILE = "$(OBJROOT)/scheme_target_ids";
+				SRCROOT = /Users/andre.alves/Documents/Works/xcodeproj_indexing_error_repro;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EXEC = "$(BAZEL_INTEGRATION_DIR)/swiftc";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_USE_INTEGRATED_DRIVER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGET_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(BAZEL_PACKAGE_BIN_DIR)/$(COMPILE_TARGET_NAME)";
+				USE_HEADERMAP = NO;
+				VALIDATE_WORKSPACE = NO;
+				_BAZEL_OUTPUT_BASE = "$(PROJECT_DIR)/../..";
+			};
+			name = Debug;
+		};
+		3C0111449870181367697E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BAZEL_PACKAGE_BIN_DIR = rules_xcodeproj;
+				CALCULATE_OUTPUT_GROUPS_SCRIPT = "$(BAZEL_INTEGRATION_DIR)/calculate_output_groups.py";
+				CC = "";
+				CXX = "";
+				INDEXING_SUPPORTED_PLATFORMS__ = "$(INDEXING_SUPPORTED_PLATFORMS__NO)";
+				INDEXING_SUPPORTED_PLATFORMS__NO = iphonesimulator;
+				INDEXING_SUPPORTED_PLATFORMS__YES = iphonesimulator;
+				INDEX_DISABLE_SCRIPT_EXECUTION = YES;
+				LD = "";
+				LDPLUSPLUS = "";
+				LIBTOOL = libtool;
+				SUPPORTED_PLATFORMS = "$(INDEXING_SUPPORTED_PLATFORMS__$(INDEX_ENABLE_BUILD_ARENA))";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EXEC = swiftc;
+				TARGET_IDS_FILE = "$(BAZEL_OUT)/darwin_arm64-dbg/bin/external/rules_xcodeproj_generated/generator/BazelSample/BazelSampleXcodeProj/BazelSampleXcodeProj_target_ids";
+				TARGET_NAME = BazelDependencies;
+			};
+			name = Debug;
+		};
+		4182224CDACFF4572BB67584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//BazelSample:DrinkDetails";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				BAZEL_TARGET_ID = "@//BazelSample:DrinkDetails ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = DrinkDetails;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -Xcc -ivfsoverlay -Xcc $(OBJROOT)/bazel-out-overlay.yaml -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml @$(DERIVED_FILE_DIR)/swift.compile.params -Xfrontend -vfsoverlay$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDetails.vfsoverlay.yaml -I/__build_bazel_rules_swift/swiftmodules -F$(SRCROOT)/Pods/lottie-ios/Frameworks/Lottie.xcframework/ios-arm64_x86_64-simulator -F$(SRCROOT)/Pods/Cartography/Frameworks/Cartography.xcframework/ios-arm64_x86_64-simulator -F$(SRCROOT)/Pods/Kingfisher/Frameworks/Kingfisher.xcframework/ios-arm64_x86_64-simulator";
+				PRODUCT_MODULE_NAME = DrinkDetails;
+				PRODUCT_NAME = DrinkDetails;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PARAMS_FILE = "$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDetails.rules_xcodeproj.swift.compile.params";
+				TARGET_NAME = DrinkDetails;
+			};
+			name = Debug;
+		};
+		55254FE4966282829A55FC2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//BazelSample:CocktailDB";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				BAZEL_TARGET_ID = "@//BazelSample:CocktailDB ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = CocktailDB;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml @$(DERIVED_FILE_DIR)/swift.compile.params -Xfrontend -vfsoverlay$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/CocktailDB.vfsoverlay.yaml -I/__build_bazel_rules_swift/swiftmodules";
+				PRODUCT_MODULE_NAME = CocktailDB;
+				PRODUCT_NAME = CocktailDB;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PARAMS_FILE = "$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/CocktailDB.rules_xcodeproj.swift.compile.params";
+				TARGET_NAME = CocktailDB;
+			};
+			name = Debug;
+		};
+		5A63E9A16CA0A8A0E1372BA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//BazelSample:DrinkDiscovery";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				BAZEL_TARGET_ID = "@//BazelSample:DrinkDiscovery ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = DrinkDiscovery;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -Xcc -ivfsoverlay -Xcc $(OBJROOT)/bazel-out-overlay.yaml -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml @$(DERIVED_FILE_DIR)/swift.compile.params -Xfrontend -vfsoverlay$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDiscovery.vfsoverlay.yaml -I/__build_bazel_rules_swift/swiftmodules -F$(SRCROOT)/Pods/lottie-ios/Frameworks/Lottie.xcframework/ios-arm64_x86_64-simulator -F$(SRCROOT)/Pods/Cartography/Frameworks/Cartography.xcframework/ios-arm64_x86_64-simulator -F$(SRCROOT)/Pods/Kingfisher/Frameworks/Kingfisher.xcframework/ios-arm64_x86_64-simulator";
+				PRODUCT_MODULE_NAME = DrinkDiscovery;
+				PRODUCT_NAME = DrinkDiscovery;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PARAMS_FILE = "$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDiscovery.rules_xcodeproj.swift.compile.params";
+				TARGET_NAME = DrinkDiscovery;
+			};
+			name = Debug;
+		};
+		69264D46EAF1E82C133E3D64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//BazelSample:Networking";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				BAZEL_TARGET_ID = "@//BazelSample:Networking ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = Networking;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml @$(DERIVED_FILE_DIR)/swift.compile.params -Xfrontend -vfsoverlay$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/Networking.vfsoverlay.yaml -I/__build_bazel_rules_swift/swiftmodules";
+				PRODUCT_MODULE_NAME = Networking;
+				PRODUCT_NAME = Networking;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PARAMS_FILE = "$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/Networking.rules_xcodeproj.swift.compile.params";
+				TARGET_NAME = Networking;
+			};
+			name = Debug;
+		};
+		88CA39B4ABC408B5014E8920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//BazelSample:CocktailDBInterface";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				BAZEL_TARGET_ID = "@//BazelSample:CocktailDBInterface ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = CocktailDBInterface;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml @$(DERIVED_FILE_DIR)/swift.compile.params -Xfrontend -vfsoverlay$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/CocktailDBInterface.vfsoverlay.yaml -I/__build_bazel_rules_swift/swiftmodules";
+				PRODUCT_MODULE_NAME = CocktailDBInterface;
+				PRODUCT_NAME = CocktailDBInterface;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PARAMS_FILE = "$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/CocktailDBInterface.rules_xcodeproj.swift.compile.params";
+				TARGET_NAME = CocktailDBInterface;
+			};
+			name = Debug;
+		};
+		B21B5B0A9CEA7C49840929D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//BazelSample:CommonUI";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				BAZEL_TARGET_ID = "@//BazelSample:CommonUI ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = CommonUI;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -Xcc -ivfsoverlay -Xcc $(OBJROOT)/bazel-out-overlay.yaml -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml @$(DERIVED_FILE_DIR)/swift.compile.params -Xfrontend -vfsoverlay$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/CommonUI.vfsoverlay.yaml -I/__build_bazel_rules_swift/swiftmodules -F$(SRCROOT)/Pods/lottie-ios/Frameworks/Lottie.xcframework/ios-arm64_x86_64-simulator -F$(SRCROOT)/Pods/Cartography/Frameworks/Cartography.xcframework/ios-arm64_x86_64-simulator";
+				PRODUCT_MODULE_NAME = CommonUI;
+				PRODUCT_NAME = CommonUI;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PARAMS_FILE = "$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/CommonUI.rules_xcodeproj.swift.compile.params";
+				TARGET_NAME = CommonUI;
+			};
+			name = Debug;
+		};
+		E8C5752FED25D42F8E7194AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//BazelSample:DrinkDetailsInterface";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample";
+				BAZEL_TARGET_ID = "@//BazelSample:DrinkDetailsInterface ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = DrinkDetailsInterface;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory -Xcc $(PROJECT_DIR) -working-directory $(PROJECT_DIR) -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml @$(DERIVED_FILE_DIR)/swift.compile.params -Xfrontend -vfsoverlay$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDetailsInterface.vfsoverlay.yaml -I/__build_bazel_rules_swift/swiftmodules";
+				PRODUCT_MODULE_NAME = DrinkDetailsInterface;
+				PRODUCT_NAME = DrinkDetailsInterface;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PARAMS_FILE = "$(BAZEL_OUT)/ios-sim_arm64-min14.0-applebin_ios-ios_sim_arm64-dbg-ST-983f5c65c923/bin/BazelSample/DrinkDetailsInterface.rules_xcodeproj.swift.compile.params";
+				TARGET_NAME = DrinkDetailsInterface;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20EA91F215B47CB204B46D8B /* Build configuration list for PBXNativeTarget "NetworkInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201C239AE39D9F25461E21D4 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		398E469AEAEF475EFAC532E4 /* Build configuration list for PBXProject "BazelSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C9A186ACA6EF78A51AF0BCE /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		72C3E6F1557EF2FC68EAF966 /* Build configuration list for PBXNativeTarget "Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69264D46EAF1E82C133E3D64 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		84FC45F4033E72795F9C5CF8 /* Build configuration list for PBXNativeTarget "CocktailDBInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88CA39B4ABC408B5014E8920 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8DA7D22799C516B38229ADB1 /* Build configuration list for PBXNativeTarget "CommonUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B21B5B0A9CEA7C49840929D9 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		964140A466617393BFCEFC53 /* Build configuration list for PBXNativeTarget "DrinkDetailsInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C5752FED25D42F8E7194AC /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		98CC16A99A8EED7ACD5E71A9 /* Build configuration list for PBXNativeTarget "BazelSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D51BE8D6373B8B715F98F7C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A4876BD6D8ADC7C2B4EF0C90 /* Build configuration list for PBXNativeTarget "DrinkData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CF120C8F1433A6E0E000C9F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AE7D95AEC9B5A6930206F1B1 /* Build configuration list for PBXAggregateTarget "BazelDependencies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0111449870181367697E96 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D55196DBEDE7F88158FED427 /* Build configuration list for PBXNativeTarget "DrinkDomain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B877143C418F9D195A5A343 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D6EB434FF256B65A99388089 /* Build configuration list for PBXNativeTarget "DrinkDetails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4182224CDACFF4572BB67584 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DC5464D9F98D341CA8DBBF62 /* Build configuration list for PBXNativeTarget "CocktailDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55254FE4966282829A55FC2E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E106EBE8310861231B9939DD /* Build configuration list for PBXNativeTarget "DrinkDiscovery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A63E9A16CA0A8A0E1372BA2 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EC56ED688A5EE1F00BB8C686 /* Build configuration list for PBXNativeTarget "DrinkDiscoveryInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CAE0F85D730D0655CE821D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C1F9BA76197290B93C9F672 /* Project object */;
+}

@@ -1,0 +1,144 @@
+####################################
+#### COMMON
+####################################
+
+### [Memory]
+
+# Shutdown Bazel Server after some minutes to avoid unnecessary Java processes lingering for too long
+# This is specially good because rules_xcodeproj spawns 2 additional Bazel processes.
+# NOTE: This flag only affects the Bazel process spawned by our command line. Check ./bazelw
+startup --max_idle_secs=300
+
+### [Xcode]
+
+# https://ifood.atlassian.net/wiki/spaces/MOBP/pages/3377332270/Bazel+-+Switching+Xcode+Versions
+
+# Guarantee that external repositories are invalidated when switching Xcodes
+# https://bazelbuild.slack.com/archives/CD3QY5C2X/p1681824007249159?thread_ts=1681499279.013309&cid=CD3QY5C2X
+common --repo_env=DEVELOPER_DIR
+
+### [Build]
+
+# Setup toolchain from apple_support
+# This is recommended for Bazel 6 and will be necessary for Bazel 7
+# https://github.com/bazelbuild/apple_support#toolchain-setup
+# https://bazelbuild.slack.com/archives/CD3QY5C2X/p1677750260906449
+build --enable_platform_specific_config
+build:macos --apple_crosstool_top=@local_config_apple_cc//:toolchain
+build:macos --crosstool_top=@local_config_apple_cc//:toolchain
+build:macos --host_crosstool_top=@local_config_apple_cc//:toolchain
+
+# Platform Mappings
+# Removed for now because it's not necessary for our project currently, but it's something that we will probably need...
+# https://github.com/buildbuddy-io/rules_xcodeproj/blob/main/examples/integration/BUILD#L25
+# https://bazel.build/concepts/platforms
+# https://github.com/bazelbuild/rules_apple/issues/1764
+# build --platform_mappings=Config/bazel/platform_mappings
+
+# Disabling sandbox is common for improving build performance
+# Allows mnemonic with persistent workers, which are good for performance
+build --spawn_strategy=remote,worker,local
+
+# Prevent file deletion after command finishes, for debugging
+build --sandbox_debug
+
+# Use a static value for `PATH` and does not inherit `LD_LIBRARY_PATH`. Doesn't let environment
+# variables like `PATH` sneak into the build, which can cause massive cache misses when they change.
+# Use `--action_env=ENV_VARIABLE` if you want to inherit specific environment variables from the
+# client, but note that doing so can prevent cross-user caching if a shared cache is used.
+build --incompatible_strict_action_env
+
+# Propagate tags from a target declaration to the actions' execution requirements.
+# Ensures that tags applied in your BUILD file, like `tags=["no-remote"]`
+# get propagated to actions created by the rule.
+# Without this option, you rely on rules authors to manually check the tags you passed
+# and apply relevant ones to the actions they create.
+# See https://github.com/bazelbuild/bazel/issues/8830 for details.
+build --experimental_allow_tags_propagation
+fetch --experimental_allow_tags_propagation
+query --experimental_allow_tags_propagation
+
+# Speed up all builds by not checking if output files have been modified. Lets you make changes to
+# the output tree without triggering a build for local debugging.
+# Docs: https://github.com/bazelbuild/bazel/blob/1af61b21df99edc2fc66939cdf14449c2661f873/src/main/java/com/google/devtools/build/lib/pkgcache/PackageOptions.java#L185
+# Sources: https://docs.aspect.build/guides/bazelrc/
+# Sources: https://brentley.dev/xcodebuild-vs-bazel-incremental/#output-difference-checking
+build --noexperimental_check_output_files
+fetch --noexperimental_check_output_files
+query --noexperimental_check_output_files
+
+# Output a heap dump if an OOM is thrown during a Bazel invocation
+# (including OOMs due to `--experimental_oom_more_eagerly_threshold`).
+# The dump will be written to `<output_base>/<invocation_id>.heapdump.hprof`.
+# You may need to configure CI to capture this artifact and upload for later use.
+build --heap_dump_on_oom
+
+### [Tests]
+
+# Default Simulator
+# Note: Remember to also update the constants in steve_lib/lib/steve/constants/constants.rb if you change these
+test --ios_simulator_device="iPhone 8" --ios_simulator_version="14.0"
+
+# Disable sandboxing otherwise FBSnapshotTestCase can't write Snapshots/FailureDiffs directly in the repo
+# Note: not necessary to add here because already disable for builds
+# test --spawn_strategy=remote,worker,local
+
+# Print the error directly instead of just providing the .log path
+test --test_output=errors
+
+# Don't need to zip the .xcresult output
+test --nozip_undeclared_test_outputs
+
+# Executes tests in parallel, which is way faster than serial
+# Executing parallel tests in the same simulator may cause issues like contention when creating the simulator for the fist time
+# Steve creates & boots the same simulator Bazel uses before invoking bazel test, so this should be safe.
+# https://github.com/bazelbuild/rules_apple/pull/1322#issuecomment-1017117150
+test --local_test_jobs=auto
+
+# Enables the caching of test results.
+test --cache_test_results=auto
+
+# Allow tests with the tag 'exclusive' to use remote cache (which also affects --cache_test_results)
+# https://github.com/bazelbuild/bazel/issues/3791#issuecomment-708853808
+test --incompatible_exclusive_test_sandboxed
+
+### [Code Coverage]
+
+# This flag is necessary to extract coverage
+coverage --experimental_use_llvm_covmap
+
+####################################
+#### BUILD FLAVORS
+####################################
+
+### [iOS Default/Debug]
+
+# The default compilation_mode is already fastbuild, but just to make it explicit
+# NOTE: fastbuild & dbg automatically adds --swiftcopt="-DDEBUG" --swiftcopt="-enable-testing"
+build --compilation_mode=fastbuild
+
+# Output .app instead of .ipa, which is faster for local development
+build --define=apple.experimental.tree_artifact_outputs=1
+
+# Improve build times by using -whole-module-optimization instead of the default incremental build
+# TODO: Benchmark scenarios to see if incremental builds are better for big modules or small changes
+# Note: vfsoverlay  may hurt performance for incremental builds using the incremental mode
+# it's a good idea to disable it when benchmarking incremental vs wmo.
+build --features="swift.vfsoverlay"
+build --swiftcopt=-wmo
+
+# Long expression type checking
+build --swiftcopt="-Xfrontend" --swiftcopt="-warn-long-expression-type-checking=500"
+
+####################################
+#### USER
+####################################
+
+# Load any settings specific to the current user.
+# .bazelrc.user should appear in .gitignore so that settings are not shared with team members
+# This needs to be last statement in this
+# config, as the user configuration should be able to overwrite flags from this file.
+# See https://docs.bazel.build/versions/master/best-practices.html#bazelrc
+# (Note that we use .bazelrc.user so the file appears next to .bazelrc in directory listing,
+# rather than user.bazelrc as suggested in the Bazel docs)
+try-import %workspace%/.bazelrc.user

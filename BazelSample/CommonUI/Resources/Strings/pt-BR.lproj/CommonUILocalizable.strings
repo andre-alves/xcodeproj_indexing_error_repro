@@ -1,0 +1,5 @@
+// MARK: - Stalker Alerts
+
+"EmptyState.Error.Title" = "Oops...";
+"EmptyState.Error.Subtitle" = "Algo deu errado";
+"EmptyState.Error.TryAgain" = "Tentar novamente";

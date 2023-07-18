@@ -1,0 +1,4 @@
+// MARK: - DrinkDetails
+"DrinkDetailsViewController.NavigationBar.Loading" = "Carregando";
+"DrinkDetailsView.Ingredients" = "Ingredientes";
+"DrinkDetailsView.Instructions" = "Instruções";
