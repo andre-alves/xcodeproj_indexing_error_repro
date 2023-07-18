@@ -1,21 +1,21 @@
-import Cartography
+//import Cartography
 import UIKit
-import Lottie
+//import Lottie
 
 public final class LoadingView: UIView {
 
-    private let animationView: AnimationView = {
-        let loading = AnimationView(filePath: Files.loadingStateJson.path)
-        loading.loopMode = .loop
-        loading.contentMode = .center
-        loading.backgroundBehavior = .pauseAndRestore
-        return loading
-    }()
+//    private let animationView: AnimationView = {
+//        let loading = AnimationView(filePath: Files.loadingStateJson.path)
+//        loading.loopMode = .loop
+//        loading.contentMode = .center
+//        loading.backgroundBehavior = .pauseAndRestore
+//        return loading
+//    }()
 
     public init(backgroundColor: UIColor = .white, loadingColor: UIColor = .red) {
         super.init(frame: .zero)
         self.backgroundColor = backgroundColor
-        self.animationView.setColor(loadingColor)
+//        self.animationView.setColor(loadingColor)
         setup()
     }
 
@@ -30,20 +30,20 @@ public final class LoadingView: UIView {
     }
 
     private func constrainLoadingView() {
-        addSubview(animationView)
-        constrain(animationView, self) { view, superview in
-            view.center == superview.center
-        }
+//        addSubview(animationView)
+//        constrain(animationView, self) { view, superview in
+//            view.center == superview.center
+//        }
     }
 }
 
 extension LoadingView: AlphaAnimation {
     public func prepareToShow() {
-        animationView.play()
+//        animationView.play()
     }
 
     public func prepareToHide() {
-        animationView.stop()
+//        animationView.stop()
     }
 }
 
@@ -78,18 +78,18 @@ extension UIView {
             return
         }
         addSubview(view)
-        constrain(view, self) { view, superview in
-            view.edges == superview.edges
-        }
+//        constrain(view, self) { view, superview in
+//            view.edges == superview.edges
+//        }
         view.show(animated: animated)
     }
 }
 
-extension AnimationView {
-    func setColor(_ color: UIColor) {
-        let colorCallbackDelegate = ColorValueProvider(color.lottieColorValue)
-        setValueProvider(colorCallbackDelegate, keypath: AnimationKeypath(keypath: "Left.Ellipse.Fill.Color"))
-        setValueProvider(colorCallbackDelegate, keypath: AnimationKeypath(keypath: "Mid.Ellipse.Fill.Color"))
-        setValueProvider(colorCallbackDelegate, keypath: AnimationKeypath(keypath: "Right.Ellipse.Fill.Color"))
-    }
-}
+//extension AnimationView {
+//    func setColor(_ color: UIColor) {
+//        let colorCallbackDelegate = ColorValueProvider(color.lottieColorValue)
+//        setValueProvider(colorCallbackDelegate, keypath: AnimationKeypath(keypath: "Left.Ellipse.Fill.Color"))
+//        setValueProvider(colorCallbackDelegate, keypath: AnimationKeypath(keypath: "Mid.Ellipse.Fill.Color"))
+//        setValueProvider(colorCallbackDelegate, keypath: AnimationKeypath(keypath: "Right.Ellipse.Fill.Color"))
+//    }
+//}

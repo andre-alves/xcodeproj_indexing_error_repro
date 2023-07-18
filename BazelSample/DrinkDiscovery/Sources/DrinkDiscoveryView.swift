@@ -1,5 +1,5 @@
 import UIKit
-import Cartography
+//import Cartography
 import CommonUI
 
 public protocol DrinkDiscoveryViewProtocol: UIView, StatefulView {
@@ -52,9 +52,9 @@ public final class DrinkDiscoveryView: UIView, DrinkDiscoveryViewProtocol {
     }
 
     private func setupConstraints() {
-        constrain(tableView, self) { tableView, superview in
-            tableView.edges == superview.edges
-        }
+//        constrain(tableView, self) { tableView, superview in
+//            tableView.edges == superview.edges
+//        }
     }
 
     private func setupExtraConfiguration() {

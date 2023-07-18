@@ -1,4 +1,4 @@
-import Cartography
+//import Cartography
 import UIKit
 
 public struct EmptyState: Equatable {
@@ -90,13 +90,13 @@ public final class EmptyStateView: UIView {
         return detailLabel
     }()
 
-    private let button: GreatButton = {
-        let button = GreatButton(mode: .oneTitleCentered)
-        button.enabledBackgroundColor = .clear
-        button.enabledTextColor = .red
-        button.isEnabled = true
-        return button
-    }()
+//    private let button: GreatButton = {
+//        let button = GreatButton(mode: .oneTitleCentered)
+//        button.enabledBackgroundColor = .clear
+//        button.enabledTextColor = .red
+//        button.isEnabled = true
+//        return button
+//    }()
 
     public init() {
         super.init(frame: CGRect.zero)
@@ -117,33 +117,33 @@ public final class EmptyStateView: UIView {
 
     private func constrainStack() {
         addSubview(stackView)
-        constrain(stackView, self) { view, superview in
-            view.top >= superview.top
-            view.bottom <= superview.bottom
-            view.leading >= superview.leading + 32
-            view.trailing <= superview.trailing - 32
-            view.centerX == superview.centerX
-            view.centerY == superview.centerY
-        }
+//        constrain(stackView, self) { view, superview in
+//            view.top >= superview.top
+//            view.bottom <= superview.bottom
+//            view.leading >= superview.leading + 32
+//            view.trailing <= superview.trailing - 32
+//            view.centerX == superview.centerX
+//            view.centerY == superview.centerY
+//        }
         stackView.addArrangedSubview(imageView)
         stackView.addArrangedSubview(contentStackView)
         contentStackView.addArrangedSubview(nameLabel)
         contentStackView.addArrangedSubview(subtitleLabel)
-        stackView.addArrangedSubview(button)
+//        stackView.addArrangedSubview(button)
     }
 
     private func constrainImage() {
-        constrain(imageView) { view in
-            view.width == 65 ~ LayoutPriority.defaultLow
-            view.height == 65 ~ LayoutPriority.defaultLow
-        }
+//        constrain(imageView) { view in
+//            view.width == 65 ~ LayoutPriority.defaultLow
+//            view.height == 65 ~ LayoutPriority.defaultLow
+//        }
     }
 
     private func constrainButton() {
-        constrain(button) { view in
-            view.height == 50
-        }
-        button.addTarget(self, action: #selector(buttonTouched), for: .touchUpInside)
+//        constrain(button) { view in
+//            view.height == 50
+//        }
+//        button.addTarget(self, action: #selector(buttonTouched), for: .touchUpInside)
     }
 
     @objc private func buttonTouched() {
@@ -167,12 +167,12 @@ public final class EmptyStateView: UIView {
         } else {
             imageView.isHidden = true
         }
-        if let buttonTitle = emptyState.buttonTitle {
-            button.isHidden = false
-            button.mainText = buttonTitle
-        } else {
-            button.isHidden = true
-        }
+//        if let buttonTitle = emptyState.buttonTitle {
+//            button.isHidden = false
+//            button.mainText = buttonTitle
+//        } else {
+//            button.isHidden = true
+//        }
     }
 }
 
@@ -209,9 +209,9 @@ extension UIView {
             return
         }
         addSubview(view)
-        constrain(view, self) { view, superview in
-            view.edges == superview.edges
-        }
+//        constrain(view, self) { view, superview in
+//            view.edges == superview.edges
+//        }
         view.render(emptyState: emptyState)
         view.show(animated: animated)
     }

@@ -1,6 +1,6 @@
-import Cartography
+//import Cartography
 import CommonUI
-import Kingfisher
+//import Kingfisher
 import UIKit
 
 final class DrinkDiscoveryTableViewCell: UITableViewCell {
@@ -68,8 +68,8 @@ final class DrinkDiscoveryTableViewCell: UITableViewCell {
     func configure(with viewModel: ViewModel) {
         titleLabel.text = viewModel.title
         subtitleLabel.text = viewModel.subtitle
-        thumbImageView.kf.cancelDownloadTask()
-        thumbImageView.kf.setImage(with: viewModel.imageURL)
+//        thumbImageView.kf.cancelDownloadTask()
+//        thumbImageView.kf.setImage(with: viewModel.imageURL)
     }
     
     private func setupComponents() {
@@ -81,40 +81,40 @@ final class DrinkDiscoveryTableViewCell: UITableViewCell {
     }
 
     private func setupConstraints() {
-        constrain(separatorView, contentView) { separator, superview in
-            separator.bottom == superview.bottom
-            separator.leading == superview.leading + 16
-            separator.trailing == superview.trailing - 16
-            separator.height == 1
-        }
-
-        constrain(thumbImageView, titleLabel, subtitleLabel, separatorView) { thumb, title, subtitle, separator in
-            thumb.top == title.top
-            thumb.bottom == subtitle.bottom
-            thumb.leading == separator.leading
-            thumb.width == thumb.height
-        }
-
-        constrain(titleLabel, thumbImageView, separatorView, contentView) { title, thumb, separator, superview in
-            title.top == superview.top + 16
-            title.leading == thumb.trailing + 8
-            title.trailing == separator.trailing
-        }
-
-        constrain(subtitleLabel, titleLabel, separatorView) { subtitle, title, separator in
-            subtitle.top == title.bottom + 4
-            subtitle.leading == title.leading
-            subtitle.trailing == title.trailing
-            subtitle.bottom == separator.top - 16
-        }
-
-        constrain(arrowImageView, titleLabel, separatorView, contentView) { arrow, title, separator, superview in
-            arrow.trailing == separator.trailing
-            arrow.leading >= title.trailing - 4
-            arrow.centerY == superview.centerY
-            arrow.height == 8
-            arrow.width == 4
-        }
+//        constrain(separatorView, contentView) { separator, superview in
+//            separator.bottom == superview.bottom
+//            separator.leading == superview.leading + 16
+//            separator.trailing == superview.trailing - 16
+//            separator.height == 1
+//        }
+//
+//        constrain(thumbImageView, titleLabel, subtitleLabel, separatorView) { thumb, title, subtitle, separator in
+//            thumb.top == title.top
+//            thumb.bottom == subtitle.bottom
+//            thumb.leading == separator.leading
+//            thumb.width == thumb.height
+//        }
+//
+//        constrain(titleLabel, thumbImageView, separatorView, contentView) { title, thumb, separator, superview in
+//            title.top == superview.top + 16
+//            title.leading == thumb.trailing + 8
+//            title.trailing == separator.trailing
+//        }
+//
+//        constrain(subtitleLabel, titleLabel, separatorView) { subtitle, title, separator in
+//            subtitle.top == title.bottom + 4
+//            subtitle.leading == title.leading
+//            subtitle.trailing == title.trailing
+//            subtitle.bottom == separator.top - 16
+//        }
+//
+//        constrain(arrowImageView, titleLabel, separatorView, contentView) { arrow, title, separator, superview in
+//            arrow.trailing == separator.trailing
+//            arrow.leading >= title.trailing - 4
+//            arrow.centerY == superview.centerY
+//            arrow.height == 8
+//            arrow.width == 4
+//        }
     }
 
     private func setupExtraConfiguration() {

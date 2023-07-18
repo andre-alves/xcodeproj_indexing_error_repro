@@ -1,7 +1,7 @@
-import Cartography
+//import Cartography
 import CommonUI
 import DrinkDetailsInterface
-import Kingfisher
+//import Kingfisher
 import UIKit
 
 public protocol DrinkDetailsViewProtocol: UIView, StatefulView {
@@ -47,7 +47,7 @@ public final class DrinkDetailsView: UIView, DrinkDetailsViewProtocol {
     private func imageView(url: URL) -> UIImageView {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.kf.setImage(with: url)
+//        imageView.kf.setImage(with: url)
         return imageView
     }
 
@@ -81,11 +81,11 @@ public final class DrinkDetailsView: UIView, DrinkDetailsViewProtocol {
     }
 
     private func setupConstraints() {
-        constrain(mainStack, self) { mainStack, superview in
-            mainStack.leading == superview.leading + 16
-            mainStack.trailing == superview.trailing - 16
-            mainStack.top == superview.topMargin + 16
-        }
+//        constrain(mainStack, self) { mainStack, superview in
+//            mainStack.leading == superview.leading + 16
+//            mainStack.trailing == superview.trailing - 16
+//            mainStack.top == superview.topMargin + 16
+//        }
     }
 
     private func setupExtraConfiguration() {
@@ -112,18 +112,18 @@ extension UIStackView {
     fileprivate func createSpacingView(size: CGFloat, relatedTo view: UIView) -> SpacingView {
         let view = SpacingView()
         view.relatedView = view
-        switch axis {
-        case .horizontal:
-            constrain(view) { view in
-                view.width == size
-            }
-        case .vertical:
-            constrain(view) { view in
-                view.height == size
-            }
-        @unknown default:
-            break
-        }
+//        switch axis {
+//        case .horizontal:
+//            constrain(view) { view in
+//                view.width == size
+//            }
+//        case .vertical:
+//            constrain(view) { view in
+//                view.height == size
+//            }
+//        @unknown default:
+//            break
+//        }
         return view
     }
 

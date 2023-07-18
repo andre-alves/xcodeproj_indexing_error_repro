@@ -97,8 +97,8 @@ swift_library(
     	":DrinkDiscoveryInterface",
     	":DrinkDetailsInterface",
         ":CommonUI",
-        "//Pods:Cartography",
-        "//Pods:Kingfisher",
+        # "//Pods:Cartography",
+        # "//Pods:Kingfisher",
     ],
     visibility = ["//visibility:public"],
     srcs = glob(["DrinkDiscovery/Sources/**/*.swift"]),
@@ -125,7 +125,7 @@ swift_library(
     deps = [
         ":DrinkDetailsInterface",
         ":CommonUI",
-        "//Pods:Kingfisher",
+        # "//Pods:Kingfisher",
     ],
     visibility = ["//visibility:public"],
     srcs = glob(["DrinkDetails/Sources/**/*.swift"]),
@@ -183,10 +183,10 @@ swift_library(
 swift_library(
     name = "CommonUI",
     module_name = "CommonUI",
-    deps = [
-        "//Pods:Lottie",
-        "//Pods:Cartography",
-    ],
+    # deps = [
+    #     "//Pods:Lottie",
+    #     "//Pods:Cartography",
+    # ],
     visibility = ["//visibility:public"],
     srcs = glob(["CommonUI/Sources/**/*.swift"]),
     tags = ["manual"],
